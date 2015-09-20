@@ -10,11 +10,9 @@ HMIN306 - Evolution et restructuration
 
 Documentation : http://jripples.sourceforge.net/  
 
-Eclipse Juno 4.2.2 conseillée pour compatibilité plugin lucene   https://www.eclipse.org/downloads/packages/eclipse-classic-422/junosr2  
-Nécéssite Java 6 sous OS X...
+[Eclipse Juno 4.2.2](https://www.eclipse.org/downloads/packages/eclipse-classic-422/junosr2) conseillé pour compatibilité plugin lucene. Nécéssite Java 6 sous OS X.
 
-Fonctionne aussi sous Eclipse Kepler 4.3  
-http://www.eclipse.org/downloads/packages/release/Kepler/SR2
+Fonctionne aussi sous [Eclipse Kepler 4.3](http://www.eclipse.org/downloads/packages/release/Kepler/SR2)
 
 Installation :
   - Télécharger le JAR : https://sourceforge.net/project/platformdownload.php?group_id=191931
