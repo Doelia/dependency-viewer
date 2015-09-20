@@ -9,7 +9,9 @@ HMIN306 - Evolution et restructuration
 ### Installation du plugin Eclipse JRipples : 
 
 Documentation : http://jripples.sourceforge.net/  
-Version d'eclise conseillée pour compatibilité plugin lucene : Eclipse Juno 4.4.2,   https://www.eclipse.org/downloads/packages/eclipse-classic-422/junosr2
+
+Version d'eclise conseillée pour compatibilité plugin lucene : Eclipse Juno 4.4.2 : https://www.eclipse.org/downloads/packages/eclipse-classic-422/junosr2
+Nécéssite Java 6 sous OS X...
 
 Installation :
   - Télécharger le JAR : https://sourceforge.net/project/platformdownload.php?group_id=191931
