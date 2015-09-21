@@ -3,7 +3,7 @@ HMIN306 - Evolution et restructuration
 
 ## Cours du 14/09
 
-- Cours sur la maintenance : http://www.lirmm.fr/~seriai/uploads/Enseignement/cours.pdf
+- **Cours sur la maintenance** : http://www.lirmm.fr/~seriai/uploads/Enseignement/cours.pdf
 - Pas de TP/TP
 
 ### Installation du plugin Eclipse JRipples : 
@@ -21,15 +21,15 @@ Installation :
 
 ## Cours du 21/09
 
-- Commencement TP Introduction  : Processus de Maintenance Logicielle
+- Commencement **TP Introduction**  : Processus de Maintenance Logicielle
   - Modification du code -> problème sur des cas particuliers pas pensés
   - Les étapes pour effectuer une modification :
-    - Ciblage d'information
-    - Analyse d'impact
+    - **Ciblage d'information**
+    - **Analyse d'impact**
       - Via Le graphe de dépendance :
         - Flow de contrôle (Méthodes)
         - Flow de données (Variable, affectations...)
-    - Test de regression (tester la bonne execution du programme)
+    - T**est de regression** (tester la bonne execution du programme)
 
 Étapes générales dans la modification d'un logiciel (incremental change) :  
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
