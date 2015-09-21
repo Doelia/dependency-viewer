@@ -35,5 +35,5 @@ Installation :
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
 
 ### **Outil CodeCity**  
-![]({{site.baseurl}}/http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png)  
+<img src="http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png" width="400px">
 Visualisation graphique du code.
