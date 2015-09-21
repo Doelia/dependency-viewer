@@ -31,5 +31,9 @@ Installation :
         - Flow de données (Variable, affectations...)
     - Test de regression (tester la bonne execution du programme)
 
-Étapes générales dans la modification d'un logiciel :
-![alt tag](http://jripples.sourceforge.net/jripples/manual/pictures/icprocess.jpg)
+Étapes générales dans la modification d'un logiciel (incremental change) :  
+http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
+
+### **Outil CodeCity**  
+![]({{site.baseurl}}/http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png)  
+Visualisation graphique du code.
