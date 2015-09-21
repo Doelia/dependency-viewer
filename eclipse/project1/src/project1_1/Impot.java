@@ -2,8 +2,7 @@ package project1_1;
 
 public class Impot {
 	
-	
-	private double calculerNombreParts(Imposable imps){
+	private double calculerNombreParts(Imposable imps) {
 		if (imps.statut == 1) { // Marié
 			return (1+ imps.nombreEnfants + 1);
 		} else if (imps.statut == 2) { // Divorsé
@@ -14,7 +13,7 @@ public class Impot {
 		}
 	}
 	
-	Tranche identifierTranche(Imposable imp){
+	Tranche identifierTranche(Imposable imp) {
 		if (imp.revenu.getMontant() > 10) {
 			return new Tranche(1);
 		}
@@ -23,12 +22,12 @@ public class Impot {
 		}
 	}
 	
-	double calculerFraisReels(Imposable imp){
+	double calculerFraisReels(Imposable imp) {
 		//TODO
 		return (imp.getFraisDeclares()* 0.8) ; 
 	}
 	
-	double calculerImpot(Imposable imps){
+	double calculerImpot(Imposable imps) {
 		Revenu rev= imps.revenu; 
 		
 		double nombreParts = calculerNombreParts(imps); 

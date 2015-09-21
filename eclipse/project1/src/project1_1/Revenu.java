@@ -22,8 +22,8 @@ public class Revenu {
 		return (revenuSalaire + 0.7 * revenuFancier + 0.85 *  autresRevenus) * 2/3; 
 	}
 
-   double getMontant() {
-	   return montant; 
-   }
+	double getMontant() {
+		return montant; 
+	}
 
 }

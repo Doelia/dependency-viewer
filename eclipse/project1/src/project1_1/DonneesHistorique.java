@@ -20,6 +20,5 @@ public class DonneesHistorique {
 	 public DonneesHistorique() {
 		 
 	 }
-	 
 
 }
