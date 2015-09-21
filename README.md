@@ -30,3 +30,6 @@ Installation :
         - Flow de contrôle (Méthodes)
         - Flow de données (Variable, affectations...)
     - Test de regression (tester la bonne execution du programme)
+
+Étapes générales dans la modification d'un logiciel :
+![alt tag](http://jripples.sourceforge.net/jripples/manual/pictures/icprocess.jpg)
