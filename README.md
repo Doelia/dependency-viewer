@@ -29,4 +29,4 @@ Installation :
       - Via Le graphe de dépendance :
         - Flow de contrôle (Méthodes)
         - Flow de données (Variable, affectations...)
-    - Test de regression
+    - Test de regression (tester la bonne execution du programme)
