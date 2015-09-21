@@ -35,5 +35,13 @@ Installation :
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
 
 ### **Outil CodeCity**  
+Visualisation graphique du code
+- District = packages
+- Imeubles = Classes
+
+Permet d'obtenir un tas d'informations via l'interface :
+- Connaître les classes concernées par une méthode
+- Voir les aspects les plus utilsés dans une classe
+
 <img src="http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png" width="400px">  
-Visualisation graphique du code.
+
