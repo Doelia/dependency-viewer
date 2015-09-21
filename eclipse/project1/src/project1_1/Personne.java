@@ -5,7 +5,7 @@ public abstract class Personne {
 	public String nom;
     public String prenom; 
     public int numSecu; 
-    public int statut;
+    public int statut; // 0 celibataire, 1 marié, 2 divorsé
     public Personne conjoint; 
     public int nombreEnfants;
     

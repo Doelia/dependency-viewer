@@ -2,6 +2,7 @@ package project1_1;
 
 
 public class DonneesHistorique {
+	
 	 double revenu;
 	 double fraisDeclares; 
 	 double fraisRetenus; 

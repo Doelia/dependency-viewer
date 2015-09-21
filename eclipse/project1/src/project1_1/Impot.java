@@ -4,17 +4,23 @@ public class Impot {
 	
 	
 	private double calculerNombreParts(Imposable imps){
-		if (imps.statut == 1)  
-		   return (1+ imps.nombreEnfants + 1);
-		else
+		if (imps.statut == 1) { // Marié
+			return (1+ imps.nombreEnfants + 1);
+		} else if (imps.statut == 2) { // Divorsé
+			return Math.pow((1 - imps.nombreEnfants), 2) * .9;
+		}
+		else { // Céliataire
 			return (1+ imps.nombreEnfants);
+		}
 	}
 	
 	Tranche identifierTranche(Imposable imp){
-		if (imp.revenu.getMontant() > 10)
+		if (imp.revenu.getMontant() > 10) {
 			return new Tranche(1);
-		else
+		}
+		else {
 			return new Tranche(2);
+		}
 	}
 	
 	double calculerFraisReels(Imposable imp){
