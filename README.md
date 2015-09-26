@@ -23,7 +23,7 @@ Installation :
 
 ### Séance du 21/09
 
-- Commencement **TP Introduction**  : Processus de Maintenance Logicielle
+- Commencement **TP Introduction**  en 1h30 : Processus de Maintenance Logicielle
   - Modification du code -> problème sur des cas particuliers pas pensés
   - Les étapes pour effectuer une modification :
     - **Ciblage d'information**
@@ -36,7 +36,7 @@ Installation :
 Étapes générales dans la modification d'un logiciel (incremental change) :  
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
 
-#### **Outil CodeCity**  
+#### Puis petit cours sur **Outil CodeCity** (Pas de salle de TP)
 Visualisation graphique du code
 - District = packages
 - Imeubles = Classes
