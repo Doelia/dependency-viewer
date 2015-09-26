@@ -1,12 +1,14 @@
 # M2-evolution
 HMIN306 - Evolution et restructuration
 
-## Cours du 14/09
+## Résumé des séances
+
+### Séannce du 14/09
 
 - **Cours sur la maintenance** : http://www.lirmm.fr/~seriai/uploads/Enseignement/cours.pdf
 - Pas de TP/TP
 
-### Installation du plugin Eclipse JRipples : 
+#### Installation du plugin Eclipse JRipples : 
 
 Documentation : http://jripples.sourceforge.net/  
 
@@ -19,7 +21,7 @@ Installation :
   - Installer jripples_X.jar depuis l'ajout de logiciels Eclipse (add sources / archive)
   - Si erreur de dépendances : Supprimer les org.apache.lucene* de eclipse/plugins et placer ceux du zip, puis reboot Eclipse (n'a pas fonctionné sous Eclipse Luna 4.4.2)
 
-## Cours du 21/09
+### Séance du 21/09
 
 - Commencement **TP Introduction**  : Processus de Maintenance Logicielle
   - Modification du code -> problème sur des cas particuliers pas pensés
