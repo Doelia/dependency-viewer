@@ -36,7 +36,7 @@ Installation :
 Étapes générales dans la modification d'un logiciel (incremental change) :  
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
 
-### **Outil CodeCity**  
+#### **Outil CodeCity**  
 Visualisation graphique du code
 - District = packages
 - Imeubles = Classes
