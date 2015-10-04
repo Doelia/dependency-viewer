@@ -49,4 +49,4 @@ Permet d'obtenir un tas d'informations via l'interface :
 <img src="http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png" width="400px">  
 
 ## Séance du 28/09
-Cours annulé, reporté au jeudu 1/10
+Cours annulé, pas reporté.
