@@ -52,7 +52,7 @@ Permet d'obtenir un tas d'informations via l'interface :
 Cours annulé, pas reporté.
 
 ## Séance du 05/10
-Cours sur l'anaylse
+Cours sur l'anaylse de 3 heures
 - Objectifs : Vérifier, comprendre, transformer, décompiler, obfusquer, optimiser
 - Deux types d'analyse
   - Analyse statique : code source uniquement, pas d'execution. Exemple : CodeCity
@@ -65,3 +65,5 @@ Cours sur l'anaylse
 
 <img src="https://github.com/Doelia/M2-evolution/raw/master/cours/c21.png" width="400px">  
 
+[TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 à peine avancé sur l'utilisation de AST avec Eclise  
+Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
