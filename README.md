@@ -56,6 +56,8 @@ Cours sur l'anaylse
 - Objectifs : Vérifier, comprendre, transformer, décompiler, obfusquer, optimiser
 - Deux types d'analyse
   - Analyse statique : code source uniquement, pas d'execution. Exemple : CodeCity
+    - Se fait en deux phases : Extraction d'un modèle (graphes, arbres, flots de contrôles, diagrammes...), puis analyse de leurs propriétés
+    - Permet par exemple le sclicing : découper le code indépendant
   - Analyse dynamique : Ecriture de code et execution
     - Permet de mesurer les temps d'execution, le nombre d'utilisation d'une fonction
     - De faire une vérification plus poussée des erreus : boucles infinies, code non atteignable...
