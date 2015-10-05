@@ -50,3 +50,16 @@ Permet d'obtenir un tas d'informations via l'interface :
 
 ## Séance du 28/09
 Cours annulé, pas reporté.
+
+## Séance du 05/10
+Cours sur l'anaylse
+- Objectifs : Vérifier, comprendre, transformer, décompiler, obfusquer, optimiser
+- Deux types d'analyse
+  - Analyse statique : code source uniquement, pas d'execution. Exemple : CodeCity
+  - Analyse dynamique : Ecriture de code et execution
+    - Permet de mesurer les temps d'execution, le nombre d'utilisation d'une fonction
+    - De faire une vérification plus poussée des erreus : boucles infinies, code non atteignable...
+    - Décomposer le code automatiquement
+
+<img src="https://github.com/Doelia/M2-evolution/raw/master/cours/c21.png" width="400px">  
+
