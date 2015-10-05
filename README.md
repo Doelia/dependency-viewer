@@ -48,11 +48,11 @@ Permet d'obtenir un tas d'informations via l'interface :
 
 <img src="http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png" width="400px">  
 
-## Séance du 28/09
+### Séance du 28/09
 Cours annulé, pas reporté.
 
-## Séance du 05/10
-Cours sur l'anaylse de 3 heures
+### Séance du 05/10
+#### Cours sur l'anaylse de 3 heures
 - Objectifs : Vérifier, comprendre, transformer, décompiler, obfusquer, optimiser
 - Deux types d'analyse
   - Analyse statique : code source uniquement, pas d'execution. Exemple : CodeCity
@@ -65,5 +65,6 @@ Cours sur l'anaylse de 3 heures
 
 <img src="https://github.com/Doelia/M2-evolution/raw/master/cours/c21.png" width="400px">  
 
-[TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 à peine avancé sur l'utilisation de AST avec Eclise  
+#### [TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 sur l'utilisation de AST avec Eclise
+A peine avancé...  
 Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
