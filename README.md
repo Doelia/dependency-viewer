@@ -68,3 +68,9 @@ Cours annulé, pas reporté.
 #### [TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 sur l'utilisation de AST avec Eclise
 A peine avancé...  
 Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
+
+### Séance du 13/10
+Intervenant Nicolas Anquetil
+- Cours "Software Visualisation"
+- TP avec [Moose](http://www.moosetechnology.org/) pour visualiser, basé sur le langage Pharo
+  - Visualisation de n'importe quel code source, à partir d'un fichier MSE
