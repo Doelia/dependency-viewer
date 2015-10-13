@@ -72,5 +72,8 @@ Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseig
 ### Séance du 13/10
 Intervenant Nicolas Anquetil
 - Cours "Software Visualisation"
+  - [A quoi sert la visualisation](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/software-visualisation.pdf)
+  - [Langage Pharo](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/pharo-intro.pdf)
+  - [Utilitaire Moose](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/moose-intro.pdf)
 - TP avec [Moose](http://www.moosetechnology.org/) pour visualiser, basé sur le langage Pharo
   - Visualisation de n'importe quel code source, à partir d'un fichier MSE
