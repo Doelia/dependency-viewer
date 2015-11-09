@@ -1,0 +1,28 @@
+digraph G { 
+	rankdir=BT;
+	margin=0;
+	node [margin="0.03,0.03",fontname="DejaVu Sans"];
+	ranksep=0.3;
+	nodesep=0.2;
+//graph[label="name:Telephone,concept number:9,object number:12,attribute number:8"
+15 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_1</td></tr><tr><td>LowSAR<br/>4Gcapable<br/>Photo<br/>NFC<br/>FullHDScreen<br/></td></tr><tr><td>GoogleNexus5<br/></td></tr></table>>];
+18 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_2</td></tr><tr><td>PhysKeyboard<br/>4Gcapable<br/>SquareScreen<br/>HighAutonomy<br/>Photo<br/>NFC<br/></td></tr><tr><td>BlackberryPassport<br/></td></tr></table>>];
+19 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_0</td></tr><tr><td>LowSAR<br/>4Gcapable<br/>HighAutonomy<br/>Photo<br/>NFC<br/></td></tr><tr><td>LGGFlex<br/></td></tr></table>>];
+12 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_4</td></tr><tr><td>PhysKeyboard<br/>SquareScreen<br/>4Gcapable<br/>Photo<br/>NFC<br/></td></tr><tr><td>BlackberryPassport<br/>BlackberryQ5<br/></td></tr></table>>];
+20 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_3</td></tr><tr><td>4Gcapable<br/>HighAutonomy<br/>Photo<br/>NFC<br/>FullHDScreen<br/></td></tr><tr><td>iphone6plus<br/>SonyXperiaZ1<br/></td></tr></table>>];
+17 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_5</td></tr><tr><td>LowSAR<br/>Photo<br/></td></tr><tr><td>GoogleNexus5<br/>WikoHighway<br/>LGGFlex<br/></td></tr></table>>];
+13 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_6</td></tr><tr><td>4Gcapable<br/>Photo<br/>NFC<br/>FullHDScreen<br/></td></tr><tr><td>iphone6plus<br/>NokiaLumia930<br/>SonyXperiaZ1<br/>GoogleNexus5<br/></td></tr></table>>];
+21 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_7</td></tr><tr><td>4Gcapable<br/>HighAutonomy<br/>Photo<br/>NFC<br/></td></tr><tr><td>BlackberryPassport<br/>BlackberryLeap<br/>iphone6plus<br/>iphone6<br/>NokiaLumia735<br/>SonyXperiaZ1<br/>LGGFlex<br/></td></tr></table>>];
+14 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Telephone_8</td></tr><tr><td>4Gcapable<br/>Photo<br/>NFC<br/></td></tr><tr><td>BlackberryPassport<br/>BlackberryLeap<br/>BlackberryQ5<br/>iphone6plus<br/>iphone6<br/>NokiaLumia735<br/>NokiaLumia930<br/>SonyXperiaZ1<br/>GoogleNexus5<br/>AsusZE500CL<br/>LGGFlex<br/></td></tr></table>>];
+	18:p -> 12:p
+	15:p -> 17:p
+	19:p -> 17:p
+	15:p -> 13:p
+	20:p -> 13:p
+	18:p -> 21:p
+	19:p -> 21:p
+	20:p -> 21:p
+	13:p -> 14:p
+	21:p -> 14:p
+	12:p -> 14:p
+}

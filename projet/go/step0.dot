@@ -1,0 +1,26 @@
+digraph G { 
+	rankdir=BT;
+subgraph Telephone { 
+label="Telephone";
+1 [shape=record,label="{Concept_Telephone_1||GoogleNexus5\n}"];
+2 [shape=record,label="{Concept_Telephone_2||BlackberryPassport\n}"];
+3 [shape=record,label="{Concept_Telephone_0||LGGFlex\n}"];
+4 [shape=record,label="{Concept_Telephone_4|PhysKeyboard\nSquareScreen\n|BlackberryQ5\n}"];
+5 [shape=record,label="{Concept_Telephone_3||iphone6plus\nSonyXperiaZ1\n}"];
+6 [shape=record,label="{Concept_Telephone_5|LowSAR\nPhoto\n|WikoHighway\n}"];
+7 [shape=record,label="{Concept_Telephone_6|FullHDScreen\n|NokiaLumia930\n}"];
+8 [shape=record,label="{Concept_Telephone_7|HighAutonomy\n|BlackberryLeap\niphone6\nNokiaLumia735\n}"];
+9 [shape=record,label="{Concept_Telephone_8|4Gcapable\nPhoto\nNFC\n|AsusZE500CL\n}"];
+	2 -> 4
+	1 -> 6
+	3 -> 6
+	1 -> 7
+	5 -> 7
+	2 -> 8
+	3 -> 8
+	5 -> 8
+	7 -> 9
+	8 -> 9
+	4 -> 9
+}
+}
