@@ -48,11 +48,11 @@ Permet d'obtenir un tas d'informations via l'interface :
 
 <img src="http://www.inf.usi.ch/phd/wettel/pics/codecity_screenshot.png" width="400px">  
 
-## Séance du 28/09
+### Séance du 28/09
 Cours annulé, pas reporté.
 
-## Séance du 05/10
-Cours sur l'anaylse
+### Séance du 05/10
+#### Cours sur l'anaylse de 3 heures
 - Objectifs : Vérifier, comprendre, transformer, décompiler, obfusquer, optimiser
 - Deux types d'analyse
   - Analyse statique : code source uniquement, pas d'execution. Exemple : CodeCity
@@ -65,3 +65,15 @@ Cours sur l'anaylse
 
 <img src="https://github.com/Doelia/M2-evolution/raw/master/cours/c21.png" width="400px">  
 
+#### [TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 sur l'utilisation de AST avec Eclise
+A peine avancé...  
+Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
+
+### Séance du 13/10
+Intervenant Nicolas Anquetil
+- Cours "Software Visualisation"
+  - [A quoi sert la visualisation](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/software-visualisation.pdf)
+  - [Langage Pharo](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/pharo-intro.pdf)
+  - [Utilitaire Moose](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/moose-intro.pdf)
+- TP avec [Moose](http://www.moosetechnology.org/) pour visualiser, basé sur le langage Pharo
+  - Visualisation de n'importe quel code source, à partir d'un fichier MSE
