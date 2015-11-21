@@ -2,6 +2,10 @@
 HMIN306 - Evolution et restructuration  
 Cours du lundi après-midi
 
+## Supports de cours
+Planning des interventions : https://www.lirmm.fr/users/utilisateurs-lirmm/marianne-huchard/enseignement/hmin306
+Supports des séances de seriai : http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (3 premiers cours)
+
 ## Résumé des séances
 
 ### Séannce du 14/09
