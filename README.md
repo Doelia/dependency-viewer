@@ -9,7 +9,7 @@ Cours du lundi après-midi
 - **Cours sur la maintenance** : http://www.lirmm.fr/~seriai/uploads/Enseignement/cours.pdf
 - Pas de TP/TP
 
-#### Installation du plugin Eclipse JRipples : 
+#### Installation du plugin Eclipse JRipples :
 
 Documentation : http://jripples.sourceforge.net/  
 
