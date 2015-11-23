@@ -2,6 +2,10 @@
 HMIN306 - Evolution et restructuration  
 Cours du lundi après-midi
 
+## Supports de cours
+Planning des interventions : https://www.lirmm.fr/users/utilisateurs-lirmm/marianne-huchard/enseignement/hmin306
+Supports des séances de seriai : http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (3 premiers cours)
+
 ## Résumé des séances
 
 ### Séannce du 14/09
@@ -69,11 +73,33 @@ Cours annulé, pas reporté.
 A peine avancé...  
 Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
 
-### Séance du 13/10
-Intervenant Nicolas Anquetil
+### Séance du 12/10
+Intervenant Nicolas Anquetil, Université de Lille
 - Cours "Software Visualisation"
   - [A quoi sert la visualisation](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/software-visualisation.pdf)
   - [Langage Pharo](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/pharo-intro.pdf)
   - [Utilitaire Moose](https://github.com/Doelia/M2-evolution/raw/master/cours/moose/moose-intro.pdf)
 - TP avec [Moose](http://www.moosetechnology.org/) pour visualiser, basé sur le langage Pharo
   - Visualisation de n'importe quel code source, à partir d'un fichier MSE
+
+### Séance du 19/10
+Invervenant Henri Basson sur l'anaylse d'impact  
+Pas grand chose de nouveau, 4 pages de notes prisent en vrac  
+Parti au bout de 1h30
+
+### Séance 2/11
+Intervenant Anne Etien, Université de Lille  
+Méta-modélisation dans le contexte de l'évolution logicielle  
+TP suite de moose, pas compris grand chose :(  
+Création de packages, propriétes avec le logiciel...
+
+### Séance 9/11
+Cours avec Marianne Huchard sur les croisement des données
+- [Cours sur l'analyse formelle](file:///Users/doelia/Downloads/coursFCAInterfaces%20(1).pdf)
+- TP : début du projet avec les collections Java
+
+### Séance 16/11
+Intervenant Mathieu Acher, Université de Rennes 1
+- Cours sur les lignes de produits : qu'est-ce qu'une ligne de produit
+- [TP sur Familiar](https://www.lirmm.fr/content/download/10217/142938/file/TP-FAMILIAR-OC.pdf) (interface web ou on tape des expressions), assez long, mais bien commencé et compris
+  - Peut être un rendu noté à faire, mais pas encore décidé
