@@ -56,7 +56,7 @@ public class Parser {
 	
 	//create AST
 	private static CompilationUnit parse(char[] classSource) {
-		ASTParser parser = ASTParser.newParser(AST.JLS8); // java +1.6
+		ASTParser parser = ASTParser.newParser(AST.JLS4); // java +1.6
 		parser.setResolveBindings(true);
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
  

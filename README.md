@@ -28,6 +28,7 @@ Installation :
 
 ### Séance du 21/09
 
+Par M. Seriai
 - Commencement **TP Introduction**  en 1h30 : Processus de Maintenance Logicielle
   - Modification du code -> problème sur des cas particuliers pas pensés
   - Les étapes pour effectuer une modification :
@@ -70,7 +71,7 @@ Cours annulé, pas reporté.
 <img src="https://github.com/Doelia/M2-evolution/raw/master/cours/c21.png" width="400px">  
 
 #### [TP](http://www.lirmm.fr/~seriai/uploads/Enseignement/TdEvol2.pdf) de 1h30 sur l'utilisation de AST avec Eclise
-A peine avancé...  
+A peine avancé...
 Pleins de liens, code, lib... sur http://www.lirmm.fr/~seriai/index.php?n=Enseignement.CoursEvolutionEtRestructurationMaster2 (TD2)
 
 ### Séance du 12/10
@@ -103,3 +104,17 @@ Intervenant Mathieu Acher, Université de Rennes 1
 - Cours sur les lignes de produits : qu'est-ce qu'une ligne de produit
 - [TP sur Familiar](https://www.lirmm.fr/content/download/10217/142938/file/TP-FAMILIAR-OC.pdf) (interface web ou on tape des expressions), assez long, mais bien commencé et compris
   - Peut être un rendu noté à faire, mais pas encore décidé
+
+### Séance 23/11
+Par M. Seriai
+- Cours ["Approches de Re-architecturisation des systèmes existants"](http://www.lirmm.fr/~seriai/uploads/Enseignement/ExtractionComposant.pdf)
+    - Définition d'un composant : Une unité de composition possédant des interfaces spécifiées par contrat et des dépendances explicites avec le contexte. Il peut être déployé indépendamment et peut être composé par un tiers
+    - Cycle de vie d'un logiciel
+
+### Séance 30/11
+Cours annulé
+
+### Séance 7/12
+Par M. Chouki  
+Support de cours : http://www.lirmm.fr/~tibermacin/ens/hmin306/
+- Cours 1, 15h : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours1.pdf
