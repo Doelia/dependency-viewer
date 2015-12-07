@@ -118,3 +118,9 @@ Cours annulé
 Par M. Chouki  
 Support de cours : http://www.lirmm.fr/~tibermacin/ens/hmin306/
 - Cours 1, 15h : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours1.pdf
+    - Évolution dirigée par la qualité des architectures à base de composants
+        - Partie 1, Évolution des architectures à composants
+- Cours 2, 15h50 : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours3.pdf
+    - Spécification des contraintes d'architecture
+        - Visiblement ça ressemblerait a ce qu'on a fait en ing. des modèle avec le langage OCL (TP tortues)
+        
