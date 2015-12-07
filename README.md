@@ -37,7 +37,7 @@ Par M. Seriai
       - Via Le graphe de dépendance :
         - Flow de contrôle (Méthodes)
         - Flow de données (Variable, affectations...)
-    - T**est de regression** (tester la bonne execution du programme)
+    - **Test de regression** (tester la bonne execution du programme)
 
 Étapes générales dans la modification d'un logiciel (incremental change) :  
 http://jripples.sourceforge.net/jripples/manual/concepts/icmain.html
@@ -117,10 +117,11 @@ Cours annulé
 ### Séance 7/12
 Par M. Chouki  
 Support de cours : http://www.lirmm.fr/~tibermacin/ens/hmin306/
-- Cours 1, 15h : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours1.pdf
+- Cours, 15h : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours1.pdf
     - Évolution dirigée par la qualité des architectures à base de composants
         - Partie 1, Évolution des architectures à composants
-- Cours 2, 15h50 : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours3.pdf
+- Cours, 15h50 : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours3.pdf
     - Spécification des contraintes d'architecture
-        - Visiblement ça ressemblerait a ce qu'on a fait en ing. des modèle avec le langage OCL (TP tortues)
-        
+        - Ça correspond a ce qu'on a fait en ing. des modèle avec le langage OCL (TP tortues)
+- Cours, 16h15 : http://www.lirmm.fr/~tibermacin/ens/hmin306/cours/cours4.pdf
+    - Génération de code Java à partir de contraintes d'architecture
