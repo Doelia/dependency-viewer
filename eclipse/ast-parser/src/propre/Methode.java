@@ -15,7 +15,6 @@ public class Methode {
 	
 	
 	// Contruit après coup
-	public ArrayList<Type> params = new ArrayList<>(); // Liste des parametres
 	public ArrayList<Methode> appels = new ArrayList<>(); // Appelle des méthodes
 	public Type classe = null; // Classe dont elle fait partie
 	
@@ -45,7 +44,6 @@ public class Methode {
 			} else {
 				System.out.println(classeAppelle+":"+methodeApelle+" introuvable");
 			}
-			//appelante.appels.add(appellee);
 		} else {
 			System.out.println(classeAppellante+":"+methodeappelante+" introuvable");
 		}

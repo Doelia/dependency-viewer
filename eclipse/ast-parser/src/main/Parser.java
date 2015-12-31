@@ -50,20 +50,19 @@ public class Parser {
 		Methode.buildAppartenances();
 		
 		
-		
-//		System.out.println("=== BUILD LISTE APPELS");
-//		for (File fileEntry : javaFiles) {
-//			System.out.println("****************");
-//			System.out.println("File "+fileEntry);
-//			String content = FileUtils.readFileToString(fileEntry);
-//
-//			System.out.println("----------------");
-//						
-//			System.out.println("METHOD INVOCATION INFO");
-//			//print method invocations
-//			printMethodInvocationInfo(parse);
-//
-//		}
+		System.out.println("=== BUILD LISTE APPELS");
+		for (File fileEntry : javaFiles) {
+			System.out.println("****************");
+			System.out.println("File "+fileEntry);
+			String content = FileUtils.readFileToString(fileEntry);
+
+			System.out.println("----------------");
+						
+			System.out.println("METHOD INVOCATION INFO");
+			CompilationUnit parse = parse(content.toCharArray());
+			printMethodInvocationInfo(parse);
+
+		}
 	}
 	
 	// navigate variables inside method
@@ -128,8 +127,8 @@ public class Parser {
 				String nameClasseAppelee = "";
 				
 				Methode.addInvocation(
-						method.getClass().getName(), nameClasse,
-						methodInvocation.getClass().getName(), nameClasseAppelee);
+						nameClasse, method.getName().toString(),
+						nameClasseAppelee, methodInvocation.getName().toString());
 			}
 
 		}
