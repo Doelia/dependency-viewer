@@ -27,11 +27,7 @@
 
       // Instantiate our network object.
       var container = document.getElementById('mynetwork');
-      var data = {
-        "nodes":
-            [{"id":1,"label":"main","value":0},{"id":2,"label":"printMethodInfo","value":0},{"id":3,"label":"printMethodInvocationInfo","value":0},{"id":4,"label":"listJavaFilesForFolder","value":0},{"id":5,"label":"parse","value":0}],
-        "edges":
-            [{"from":"main","to":"listJavaFilesForFolder","title":"","value":1},{"from":"main","to":"parse","title":"","value":1},{"from":"main","to":"printMethodInfo","title":"","value":1},{"from":"main","to":"printMethodInvocationInfo","title":"","value":1},{"from":"listJavaFilesForFolder","to":"listJavaFilesForFolder","title":"","value":1}]}
+      var data = {"nodes":[{"id":"main","label":"main","value":0},{"id":"printMethodInfo","label":"printMethodInfo","value":0},{"id":"printMethodInvocationInfo","label":"printMethodInvocationInfo","value":0},{"id":"listJavaFilesForFolder","label":"listJavaFilesForFolder","value":0},{"id":"parse","label":"parse","value":0}],"edges":[{"from":"main","to":"listJavaFilesForFolder","title":"","value":1},{"from":"main","to":"parse","title":"","value":1},{"from":"main","to":"printMethodInfo","title":"","value":1},{"from":"main","to":"printMethodInvocationInfo","title":"","value":1},{"from":"listJavaFilesForFolder","to":"listJavaFilesForFolder","title":"","value":1}]}
 ;
 
 var options = {

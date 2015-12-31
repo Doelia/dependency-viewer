@@ -46,7 +46,7 @@ public class Extractor {
 		int id = 0;
 		for (String c : noeuds) {
 			JSONObject jObjd = new JSONObject();
-	       jObjd.put("id", (++id));
+	       jObjd.put("id", c);
 	       jObjd.put("value", 0);
 	       jObjd.put("label", c);
 	       mJSONArray.add(jObjd);

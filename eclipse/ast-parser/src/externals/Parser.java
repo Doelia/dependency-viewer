@@ -62,7 +62,7 @@ public class Parser {
 		
 		
 		ExcratorClasse ex1 = new ExcratorClasse();
-		ex1.nameClasse = "Parser";
+		ex1.nameClasse = "ExcratorClasse";
 		ex1.process();
 		
 		System.out.println(ex1.toJson());
