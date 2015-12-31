@@ -11,8 +11,7 @@ public class FieldAccessVisitor extends ASTVisitor {
 	List<SimpleName> fields = new ArrayList<SimpleName>();
 
 	public boolean visit(SimpleName node) {
-		if (!node.isDeclaration()
-				&& node.resolveBinding() instanceof IVariableBinding) {
+		if (!node.isDeclaration() && node.resolveBinding() instanceof IVariableBinding) {
 			fields.add(node);
 		}
 		return super.visit(node);
