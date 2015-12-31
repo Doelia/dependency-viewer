@@ -2,8 +2,6 @@ package propre;
 
 import java.util.ArrayList;
 
-import org.eclipse.jdt.internal.core.util.ToStringSorter;
-
 public class Type {
 	
 	public static ArrayList<Type> instances = new ArrayList<>();
@@ -30,6 +28,15 @@ public class Type {
 	
 	public String toString() {
 		return name;
+	}
+	
+	public static Type getTypeFromName(String name) {
+		for (Type t : instances) {
+			if (t.name.equals(name)) {
+				return t;
+			}
+		}
+		return null;
 	}
 	
 }

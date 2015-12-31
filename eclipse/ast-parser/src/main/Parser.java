@@ -47,6 +47,8 @@ public class Parser {
 		System.out.println("Type créés:");
 		System.out.println(Type.instances);
 		
+		Methode.buildAppartenances();
+		
 		
 		
 //		System.out.println("=== BUILD LISTE APPELS");
@@ -108,30 +110,30 @@ public class Parser {
 	}
 	
 	// navigate method invocations inside method
-		// La liste des méthodes est contruite
-		public static void printMethodInvocationInfo(CompilationUnit parse) {
+	// La liste des méthodes est contruite
+	public static void printMethodInvocationInfo(CompilationUnit parse) {
 
-			MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
-			parse.accept(visitor1);
-			for (MethodDeclaration method : visitor1.getMethods()) {
+		MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
+		parse.accept(visitor1);
+		for (MethodDeclaration method : visitor1.getMethods()) {
 
-				MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
-				method.accept(visitor2);
+			MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
+			method.accept(visitor2);
+			
+			String nameClasse = method.resolveBinding().getDeclaringClass().getName();
+
+			for (MethodInvocation methodInvocation : visitor2.getMethods()) {
 				
-				String nameClasse = method.resolveBinding().getDeclaringClass().getName();
-
-				for (MethodInvocation methodInvocation : visitor2.getMethods()) {
-					
-					
-					String nameClasseAppelee = "";
-					
-					Methode.addInvocation(
-							method.getClass().getName(), nameClasse,
-							methodInvocation.getClass().getName(), nameClasseAppelee);
-				}
-
+				
+				String nameClasseAppelee = "";
+				
+				Methode.addInvocation(
+						method.getClass().getName(), nameClasse,
+						methodInvocation.getClass().getName(), nameClasseAppelee);
 			}
+
 		}
+	}
 	
 	// read all java files from specific folder
 	public static ArrayList<File> listJavaFilesForFolder(final File folder) {
@@ -156,7 +158,7 @@ public class Parser {
  
 		parser.setBindingsRecovery(true);
  
-		Map options = JavaCore.getOptions();
+		Map<?, ?> options = JavaCore.getOptions();
 		parser.setCompilerOptions(options);
  
 		parser.setUnitName("");
