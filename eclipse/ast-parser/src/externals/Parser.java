@@ -1,4 +1,4 @@
-package main;
+package externals;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,8 +13,9 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
 
-import propre.Methode;
-import propre.Type;
+import builder.Methode;
+import builder.Type;
+import extractor.ExcratorClasse;
 
 public class Parser {
 	
@@ -58,6 +59,12 @@ public class Parser {
 			printMethodInvocationInfo(parse);
 
 		}
+		
+		
+		ExcratorClasse ex1 = new ExcratorClasse();
+		ex1.nameClasse = "Methode";
+		ex1.process();
+		
 	}
 	
 	public static void printMethodInfo(CompilationUnit parse) {

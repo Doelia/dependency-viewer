@@ -1,4 +1,4 @@
-package propre;
+package builder;
 
 import java.util.ArrayList;
 
