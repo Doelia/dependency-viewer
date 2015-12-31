@@ -38,13 +38,21 @@ public class Methode {
 		return null;
 	}
 	
-	public static void addInvocation(String classeAppellante, String methodeappelante, String appelee) {
+	public static void addInvocation(String classeAppellante, String methodeappelante, String classeAppelle, String methodeApelle) {
+		System.out.println("Brut: "+classeAppellante+":"+methodeappelante+ " appelle la méthode "+classeAppelle+":"+methodeApelle);
+		
 		Methode appelante = getMothodeFromName(classeAppellante, methodeappelante);
-		Methode appellee = getMothodeFromName(classeAppellante, appelee); // Attention, c'est la même classe ?
+		Methode appellee = getMothodeFromName(classeAppelle, methodeApelle);
 		if (appelante != null) {
-			appelante.appels.add(appellee);
-			System.out.println("La méthode "+methodeappelante+ "appelle la méthode "+appelee);
-			return;
+			if (appellee != null) { 
+				appelante.appels.add(appellee);
+				return;
+			} else {
+				System.out.println(classeAppelle+":"+methodeApelle+" introuvable");
+			}
+			//appelante.appels.add(appellee);
+		} else {
+			System.out.println(classeAppellante+":"+methodeappelante+" introuvable");
 		}
 	}
 }

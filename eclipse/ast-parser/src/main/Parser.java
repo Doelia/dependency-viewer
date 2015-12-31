@@ -29,7 +29,8 @@ public class Parser {
 		final File folder = new File(projectSourcePath);
 		ArrayList<File> javaFiles = listJavaFilesForFolder(folder);
 
-		//
+		
+		System.out.println("=== BUILD LISTE DES MÉTHODES ET DES CLASSE");
 		for (File fileEntry : javaFiles) {
 			System.out.println("****************");
 			System.out.println("File "+fileEntry);
@@ -37,23 +38,30 @@ public class Parser {
 			//System.out.println(content);
 			System.out.println("METHOD INFO");
 			CompilationUnit parse = parse(content.toCharArray());
-			// print methods info
 			printMethodInfo(parse);
-			System.out.println(Methode.instances);
-			
-//			System.out.println("----------------");
-//			
-//			System.out.println("VARIABLE");
-//			// print variables info
-//			printVariableInfo(parse);
-//			
-			System.out.println("----------------");
-						
-			System.out.println("METHOD INVOCATION INFO");
-			//print method invocations
-			printMethodInvocationInfo(parse);
 
 		}
+		
+		System.out.println(Methode.instances);
+		
+		System.out.println("Type créés:");
+		System.out.println(Type.instances);
+		
+		
+		
+//		System.out.println("=== BUILD LISTE APPELS");
+//		for (File fileEntry : javaFiles) {
+//			System.out.println("****************");
+//			System.out.println("File "+fileEntry);
+//			String content = FileUtils.readFileToString(fileEntry);
+//
+//			System.out.println("----------------");
+//						
+//			System.out.println("METHOD INVOCATION INFO");
+//			//print method invocations
+//			printMethodInvocationInfo(parse);
+//
+//		}
 	}
 	
 	// navigate variables inside method
@@ -77,47 +85,53 @@ public class Parser {
 		}
 	}
 	
-	
-	// navigate method invocations inside method
-	// La liste des méthodes est contruite
-	public static void printMethodInvocationInfo(CompilationUnit parse) {
-
-		MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
-		parse.accept(visitor1);
-		for (MethodDeclaration method : visitor1.getMethods()) {
-
-			MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
-			method.accept(visitor2);
-
-			for (MethodInvocation methodInvocation : visitor2.getMethods()) {
-				
-				System.out.println("method " + method.getName() + " invoc method "
-						+ methodInvocation.getName());
-			}
-
-		}
-	}
-
 	public static void printMethodInfo(CompilationUnit parse) {
 		MethodDeclarationVisitor visitor = new MethodDeclarationVisitor();
 		parse.accept(visitor);
+		
 
 		for (MethodDeclaration method : visitor.getMethods()) {
+			
+			String nameClasse = method.resolveBinding().getDeclaringClass().getName();
 			
 			Methode m = new Methode();
 			m.name = method.getName().toString();
 			m.typeRetour = method.getReturnType2().toString();
-			m.nameClasse = method.getClass().getName().toString();
+			m.nameClasse = nameClasse;
 			Methode.instances.add(m);
 			
-			Type.createInFotExists(method.getReturnType2().toString());
-			Type.createInFotExists(method.getClass().getName().toString());
+//			System.out.println("Méthode contruite : "+m);
 			
-			System.out.println("Method name: " + method.getName()
-					+ " Return type: " + method.getReturnType2());
+			Type.createInFotExists(nameClasse);
 		}
 
 	}
+	
+	// navigate method invocations inside method
+		// La liste des méthodes est contruite
+		public static void printMethodInvocationInfo(CompilationUnit parse) {
+
+			MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
+			parse.accept(visitor1);
+			for (MethodDeclaration method : visitor1.getMethods()) {
+
+				MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
+				method.accept(visitor2);
+				
+				String nameClasse = method.resolveBinding().getDeclaringClass().getName();
+
+				for (MethodInvocation methodInvocation : visitor2.getMethods()) {
+					
+					
+					String nameClasseAppelee = "";
+					
+					Methode.addInvocation(
+							method.getClass().getName(), nameClasse,
+							methodInvocation.getClass().getName(), nameClasseAppelee);
+				}
+
+			}
+		}
 	
 	// read all java files from specific folder
 	public static ArrayList<File> listJavaFilesForFolder(final File folder) {

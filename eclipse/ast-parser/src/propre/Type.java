@@ -2,11 +2,14 @@ package propre;
 
 import java.util.ArrayList;
 
+import org.eclipse.jdt.internal.core.util.ToStringSorter;
+
 public class Type {
 	
 	public static ArrayList<Type> instances = new ArrayList<>();
 	
 	public static void createInFotExists(String nameClasse) {
+//		System.out.println("Test type "+nameClasse);
 		for (Type instance : instances) {
 			if (instance.name.equals(nameClasse)) {
 				return;
@@ -24,5 +27,9 @@ public class Type {
 	
 	// Dynamique
 	public ArrayList<Methode> methodes = new ArrayList<Methode>();
+	
+	public String toString() {
+		return name;
+	}
 	
 }
