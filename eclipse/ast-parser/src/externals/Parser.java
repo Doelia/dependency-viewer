@@ -65,6 +65,8 @@ public class Parser {
 		ex1.nameClasse = "Parser";
 		ex1.process();
 		
+		System.out.println(ex1.toJson());
+		
 	}
 	
 	public static void printMethodInfo(CompilationUnit parse) {
