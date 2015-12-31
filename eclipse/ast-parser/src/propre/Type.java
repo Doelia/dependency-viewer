@@ -7,7 +7,6 @@ public class Type {
 	public static ArrayList<Type> instances = new ArrayList<>();
 	
 	public static void createInFotExists(String nameClasse) {
-//		System.out.println("Test type "+nameClasse);
 		for (Type instance : instances) {
 			if (instance.name.equals(nameClasse)) {
 				return;

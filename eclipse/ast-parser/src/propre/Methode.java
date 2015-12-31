@@ -33,19 +33,20 @@ public class Methode {
 	}
 	
 	public static void addInvocation(String classeAppellante, String methodeappelante, String classeAppelle, String methodeApelle) {
-		System.out.println("Brut: "+classeAppellante+":"+methodeappelante+ " appelle la méthode "+classeAppelle+":"+methodeApelle);
+//		System.out.println("Brut: "+classeAppellante+":"+methodeappelante+ " appelle la méthode "+classeAppelle+":"+methodeApelle);
 		
 		Methode appelante = getMothodeFromName(classeAppellante, methodeappelante);
 		Methode appellee = getMothodeFromName(classeAppelle, methodeApelle);
 		if (appelante != null) {
 			if (appellee != null) { 
 				appelante.appels.add(appellee);
+				System.out.println("Brut: "+classeAppellante+":"+methodeappelante+ " appelle la méthode "+classeAppelle+":"+methodeApelle);
 				return;
 			} else {
-				System.out.println(classeAppelle+":"+methodeApelle+" introuvable");
+//				System.out.println(classeAppelle+":"+methodeApelle+" introuvable");
 			}
 		} else {
-			System.out.println(classeAppellante+":"+methodeappelante+" introuvable");
+//			System.out.println(classeAppellante+":"+methodeappelante+" introuvable");
 		}
 	}
 	

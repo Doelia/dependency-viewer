@@ -12,7 +12,6 @@ import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
-import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
 import propre.Methode;
 import propre.Type;
@@ -35,8 +34,7 @@ public class Parser {
 			System.out.println("****************");
 			System.out.println("File "+fileEntry);
 			String content = FileUtils.readFileToString(fileEntry);
-			//System.out.println(content);
-			System.out.println("METHOD INFO");
+			
 			CompilationUnit parse = parse(content.toCharArray());
 			printMethodInfo(parse);
 
@@ -56,32 +54,8 @@ public class Parser {
 			System.out.println("File "+fileEntry);
 			String content = FileUtils.readFileToString(fileEntry);
 
-			System.out.println("----------------");
-						
-			System.out.println("METHOD INVOCATION INFO");
 			CompilationUnit parse = parse(content.toCharArray());
 			printMethodInvocationInfo(parse);
-
-		}
-	}
-	
-	// navigate variables inside method
-	public static void printVariableInfo(CompilationUnit parse) {
-
-		MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
-		parse.accept(visitor1);
-		for (MethodDeclaration method : visitor1.getMethods()) {
-
-			VariableDeclarationFragmentVisitor visitor2 = new VariableDeclarationFragmentVisitor();
-			method.accept(visitor2);
-
-			for (VariableDeclarationFragment variableDeclarationFragment : visitor2
-					.getVariables()) {
-				System.out.println("variable name: "
-						+ variableDeclarationFragment.getName()
-						+ " variable Initializer: "
-						+ variableDeclarationFragment.getInitializer());
-			}
 
 		}
 	}
@@ -123,12 +97,16 @@ public class Parser {
 
 			for (MethodInvocation methodInvocation : visitor2.getMethods()) {
 				
-				
 				String nameClasseAppelee = "";
 				
-				Methode.addInvocation(
-						nameClasse, method.getName().toString(),
-						nameClasseAppelee, methodInvocation.getName().toString());
+				if (methodInvocation.resolveMethodBinding() != null) {
+					nameClasseAppelee = methodInvocation.resolveMethodBinding().getDeclaringClass().getName();
+					
+					Methode.addInvocation(
+							nameClasse, method.getName().toString(),
+							nameClasseAppelee, methodInvocation.getName().toString());
+				}
+				
 			}
 
 		}
