@@ -62,7 +62,7 @@ public class Parser {
 		
 		
 		ExcratorClasse ex1 = new ExcratorClasse();
-		ex1.nameClasse = "Methode";
+		ex1.nameClasse = "Parser";
 		ex1.process();
 		
 	}

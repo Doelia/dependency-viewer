@@ -31,6 +31,11 @@ public class Extractor {
 		arcs.add(arc);
 	}
 	
+	public void arrNoeud(String n) {
+		this.noeuds.add(n);
+		System.out.println("Noeud "+n);
+	}
+	
 	public ArrayList<String> noeuds = new ArrayList<>();
 	public ArrayList<Arc> arcs = new ArrayList<>();
 	

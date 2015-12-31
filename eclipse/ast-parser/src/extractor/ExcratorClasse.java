@@ -18,7 +18,7 @@ public class ExcratorClasse extends Extractor {
 		}
 		
 		for (Methode m : c.methodes) {
-			this.noeuds.add(m.name);
+			this.arrNoeud(m.name);
 			
 			for (Methode called : m.appels) {
 				if (called.nameClasse.equals(nameClasse)) {
