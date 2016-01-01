@@ -15,6 +15,7 @@ import org.eclipse.jdt.core.dom.MethodInvocation;
 
 import builder.Methode;
 import builder.Type;
+import main.Main;
 
 public class Parser {
 
@@ -25,9 +26,9 @@ public class Parser {
 		final File folder = new File(projectPath);
 		ArrayList<File> javaFiles = listJavaFilesForFolder(folder);
 
-		System.out.println("=== BUILD LISTE DES MÉTHODES ET DES CLASSE");
+		Main.Log("=== BUILD LISTE DES MÉTHODES ET DES CLASSE");
 		for (File fileEntry : javaFiles) {
-			System.out.println("File " + fileEntry);
+			Main.Log("File " + fileEntry);
 			String content = FileUtils.readFileToString(fileEntry);
 
 			CompilationUnit parse = parse(content.toCharArray(), projectPath);
@@ -35,16 +36,13 @@ public class Parser {
 
 		}
 
-		System.out.println(Methode.instances);
-
-		System.out.println("Type créés:");
-		System.out.println(Type.instances);
+		Main.Log("Type créés:");
 
 		Methode.buildAppartenances();
 
-		System.out.println("=== BUILD LISTE APPELS");
+		Main.Log("=== BUILD LISTE APPELS");
 		for (File fileEntry : javaFiles) {
-			System.out.println("File " + fileEntry);
+			Main.Log("File " + fileEntry);
 			String content = FileUtils.readFileToString(fileEntry);
 
 			CompilationUnit parse = parse(content.toCharArray(), projectPath);
@@ -68,7 +66,7 @@ public class Parser {
 				m.nameClasse = nameClasse;
 				Methode.instances.add(m);
 
-				// System.out.println("Méthode contruite : "+m);
+				// Main.Log("Méthode contruite : "+m);
 
 				Type.addType(nameClasse);
 			} catch (Exception e) {
@@ -115,7 +113,7 @@ public class Parser {
 			if (fileEntry.isDirectory()) {
 				javaFiles.addAll(listJavaFilesForFolder(fileEntry));
 			} else if (fileEntry.getName().contains(".java")) {
-				// System.out.println(fileEntry.getName());
+				// Main.Log(fileEntry.getName());
 				javaFiles.add(fileEntry);
 			}
 		}

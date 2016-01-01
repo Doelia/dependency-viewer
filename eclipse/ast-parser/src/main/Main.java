@@ -6,6 +6,14 @@ import externals.Parser;
 import extractor.*;
 
 public class Main {
+	
+	private static boolean LOGGING = false;
+	
+	public static void Log(String s) {
+		if (LOGGING) {
+			System.out.println(s);
+		}
+	}
 
 	public static void main(String[] args) throws IOException {
 
@@ -13,20 +21,22 @@ public class Main {
 		String path = "/Users/doelia/Documents/dev/survivia-bukkit/src/rush/gameserver/game";
 		String method = "classe"; // classe ou projet
 		String classe = "GamerRushIG";
+		LOGGING = true;
 		
 		if (args.length > 0) {
 			path = args[0];
 			method = args[1];
 			classe = args[2];
+			LOGGING = false;
 		}
 		
-		System.out.println("path = "+path);
-		System.out.println("method = "+method);
-		System.out.println("classe = "+classe);
+		Main.Log("path = "+path);
+		Main.Log("method = "+method);
+		Main.Log("classe = "+classe);
 
 		Parser.buildHierarchy(path);
 
-		System.out.println("Construction du graphe...");
+		Main.Log("Construction du graphe...");
 		Extractor ex = null;
 		if (method.equals("classe")) {
 			ExtractorClasse ex1 = new ExtractorClasse();
@@ -39,9 +49,9 @@ public class Main {
 			ex = ex2;
 		}
 
-		System.out.println("Génération du json...");
+		Main.Log("Génération du json...");
 		System.out.println(ex.toJson());
-		System.out.println("End.");
+		Main.Log("End.");
 
 	}
 }

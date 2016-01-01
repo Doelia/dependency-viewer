@@ -2,6 +2,8 @@ package builder;
 
 import java.util.HashSet;
 
+import main.Main;
+
 public class Methode {
 
 	public static HashSet<Methode> instances = new HashSet<>();
@@ -36,7 +38,7 @@ public class Methode {
 		if (appelante != null) {
 			if (appellee != null) {
 				appelante.appels.add(appellee);
-				System.out.println("Brut: " + classeAppellante + ":" + methodeappelante + " appelle la méthode "
+				Main.Log("Brut: " + classeAppellante + ":" + methodeappelante + " appelle la méthode "
 						+ classeAppelle + ":" + methodeApelle);
 				return;
 			}
@@ -44,13 +46,13 @@ public class Methode {
 	}
 
 	public static void buildAppartenances() {
-		System.out.println("=== buildAppartenances === ");
+		Main.Log("=== buildAppartenances === ");
 		for (Methode m : instances) {
 			Type classeContenante = Type.getTypeFromName(m.nameClasse);
 			if (classeContenante != null) {
 				m.classe = classeContenante;
 				classeContenante.methodes.add(m);
-				// System.out.println("La classe "+classeContenante+" contient
+				// Main.Log("La classe "+classeContenante+" contient
 				// la méthode "+m.name);
 			}
 		}

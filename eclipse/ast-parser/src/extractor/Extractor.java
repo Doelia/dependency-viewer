@@ -6,6 +6,8 @@ import java.util.HashSet;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import main.Main;
+
 @SuppressWarnings("unchecked")
 public abstract class Extractor {
 
@@ -31,13 +33,13 @@ public abstract class Extractor {
 			}
 		}
 
-		System.out.println("Arc " + arc);
+		Main.Log("Arc " + arc);
 		arcs.add(arc);
 	}
 
 	public void addNoeud(String n) {
 		this.noeuds.add(n);
-		System.out.println("Noeud " + n);
+		Main.Log("Noeud " + n);
 	}
 
 	public HashSet<String> noeuds = new HashSet<>();

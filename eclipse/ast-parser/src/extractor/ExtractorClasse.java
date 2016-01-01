@@ -2,6 +2,7 @@ package extractor;
 
 import builder.Methode;
 import builder.Type;
+import main.Main;
 
 public class ExtractorClasse extends Extractor {
 
@@ -11,7 +12,7 @@ public class ExtractorClasse extends Extractor {
 		Type c = Type.getTypeFromName(nameClasse);
 
 		if (c == null) {
-			System.out.println("Type " + nameClasse + " introuvable");
+			Main.Log("Type " + nameClasse + " introuvable");
 			System.exit(0);
 		}
 
