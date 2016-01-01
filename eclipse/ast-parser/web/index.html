@@ -34,6 +34,13 @@
         };
         new vis.Network(container, data, options);
     }
+
+    function process() {
+        var url = "/process" + "?methode=" + $('#methode').val() + "&path=" + $('#path').val() + "&classe=" + $('#classe').val();
+        $.getJSON(url, function(data) {
+            console.log(data);
+        });
+    }
     </script>
 </head>
 <body>
@@ -42,11 +49,11 @@
         <h1>Générateur de graphe de dépendace</h1>
         <div class="form-group">
             <label for="">Chemin du code source</label>
-            <input type="text" class="form-control" value="/Users/doelia/Documents/dev/survivia-bukkit/src/rush/gameserver/game">
+            <input id="path" type="text" class="form-control" value="/Users/doelia/Documents/dev/survivia-bukkit/src/rush/gameserver/game">
         </div>
         <div class="form-group">
             <label for="">Méthode de visualisation</label>
-            <select name="" id="" class="form-control" ng-model="methode">
+            <select name="" id="methode" class="form-control" ng-model="methode">
                 <option value="projet">Graphe d'appel de l'application</option>
                 <option value="classe">Graphe d'appel au sein d'une classe</option>
             </select>
@@ -66,10 +73,10 @@
         </div>
         <div class="form-group" ng-show="methode == 'classe'">
             <label for="">Classe cible</label>
-            <input type="text" class="form-control" value="GamerRushIG">
+            <input id="classe" type="text" class="form-control" value="GamerRushIG">
         </div>
 
-        <button type="submit" class="btn btn-primary" onclick="draw()">Générer</button>
+        <button type="submit" class="btn btn-primary" onclick="process()">Générer</button>
 
         <div id="mynetwork" style="margin-top: 25px;"></div>
     </div>
