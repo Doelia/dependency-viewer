@@ -19,6 +19,10 @@ public class Main {
 			method = args[1];
 			classe = args[2];
 		}
+		
+		System.out.println("path = "+path);
+		System.out.println("method = "+method);
+		System.out.println("classe = "+classe);
 
 		Parser.buildHierarchy(path);
 
