@@ -1,5 +1,9 @@
 # Générateur de graphe de dépendance
 
+![](http://i.imgur.com/rxdGtff.png)
+![](http://i.imgur.com/fFtDOMp.png)
+
+
 Le projet comporte 3 composants :
 - Le code JAVA qui permet de générer un graphe au format json
     - Exporté en .jar pour une utilisation externe
