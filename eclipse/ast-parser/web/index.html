@@ -37,8 +37,9 @@
 
     function process() {
         var url = "/process" + "?methode=" + $('#methode').val() + "&path=" + $('#path').val() + "&classe=" + $('#classe').val();
-        $.getJSON(url, function(data) {
-            console.log(data);
+        console.log("url = "+url)
+        $.get(url, function(data) {
+            console.log("data = "+data);
         });
     }
     </script>
@@ -49,7 +50,7 @@
         <h1>Générateur de graphe de dépendace</h1>
         <div class="form-group">
             <label for="">Chemin du code source</label>
-            <input id="path" type="text" class="form-control" value="/Users/doelia/Documents/dev/survivia-bukkit/src/rush/gameserver/game">
+            <input id="path" type="text" class="form-control" value="/Users/doelia/Documents/dev/M2/M2-evolution/eclipse/ast-parser/src">
         </div>
         <div class="form-group">
             <label for="">Méthode de visualisation</label>
@@ -73,7 +74,7 @@
         </div>
         <div class="form-group" ng-show="methode == 'classe'">
             <label for="">Classe cible</label>
-            <input id="classe" type="text" class="form-control" value="GamerRushIG">
+            <input id="classe" type="text" class="form-control" value="Parser">
         </div>
 
         <button type="submit" class="btn btn-primary" onclick="process()">Générer</button>
