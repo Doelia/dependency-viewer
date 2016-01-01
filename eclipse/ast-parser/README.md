@@ -12,10 +12,12 @@ Le .jar est à disposition dans le repertoire et n'a pa besoin d'être recompil�
 
 Compiler le serveur golang :
 ```
+ln -s golang/ast-linker $GOPATH/src/ast-linker
+cd golang/ast-linker
 go build
 ```
 
-Lancer le serveur Golang en spécifiant le repertoire du JAR et le port HTTP voulu :
+Lancer le serveur Golang en spécifiant le chemin absolue du JAR et le port HTTP voulu :
 ```
 ./ast-linker -port 2000 -jar /Users/doelia/Documents/dev/M2/M2-evolution/eclipse/ast-parser/graph-generator.jar
 ```
