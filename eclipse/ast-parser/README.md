@@ -2,7 +2,7 @@
 
 ![](http://i.imgur.com/rxdGtff.png)
 ![](http://i.imgur.com/fFtDOMp.png)
-
+![](http://i.imgur.com/rI5r78O.png)
 
 Le projet comporte 3 composants :
 - Le code JAVA qui permet de générer un graphe au format json
