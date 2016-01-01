@@ -18,8 +18,8 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 		// Parametres
-		String path = "/Users/doelia/Documents/dev/survivia-bukkit/src/rush/gameserver/game";
-		String method = "classe"; // classe ou projet
+		String path = "/Users/doelia/Documents/dev/M2/M2-evolution/eclipse/ast-parser/src";
+		String method = "projet"; // classe ou projet
 		String classe = "GamerRushIG";
 		LOGGING = true;
 		
