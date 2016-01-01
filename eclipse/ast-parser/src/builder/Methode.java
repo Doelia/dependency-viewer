@@ -1,17 +1,17 @@
 package builder;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Methode {
 
-	public static ArrayList<Methode> instances = new ArrayList<>();
+	public static HashSet<Methode> instances = new HashSet<>();
 
 	public String name;
 	public String typeRetour;
 	public String nameClasse = "undefined";
 
 	// Contruit après coup
-	public ArrayList<Methode> appels = new ArrayList<>();
+	public HashSet<Methode> appels = new HashSet<>();
 	public Type classe = null; // Classe dont elle fait partie
 
 	@Override
@@ -19,7 +19,7 @@ public class Methode {
 		return "Méthode " + name + " (classe " + nameClasse + "), retour de type " + typeRetour;
 	}
 
-	public static Methode getMothodeFromName(String nameClasse, String nomMethode) {
+	public static Methode getMethode(String nameClasse, String nomMethode) {
 		for (Methode m : instances) {
 			if (m.nameClasse.equals(nameClasse) && m.name.equals(nomMethode)) {
 				return m;
@@ -31,8 +31,8 @@ public class Methode {
 	public static void addInvocation(String classeAppellante, String methodeappelante, String classeAppelle,
 			String methodeApelle) {
 
-		Methode appelante = getMothodeFromName(classeAppellante, methodeappelante);
-		Methode appellee = getMothodeFromName(classeAppelle, methodeApelle);
+		Methode appelante = getMethode(classeAppellante, methodeappelante);
+		Methode appellee = getMethode(classeAppelle, methodeApelle);
 		if (appelante != null) {
 			if (appellee != null) {
 				appelante.appels.add(appellee);
@@ -50,8 +50,17 @@ public class Methode {
 			if (classeContenante != null) {
 				m.classe = classeContenante;
 				classeContenante.methodes.add(m);
-				// System.out.println("La classe "+classeContenante+" contient la méthode "+m.name);
+				// System.out.println("La classe "+classeContenante+" contient
+				// la méthode "+m.name);
 			}
 		}
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Methode) {
+			return this.name.equals(((Methode) obj).name);
+		}
+		return false;
 	}
 }

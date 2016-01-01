@@ -3,7 +3,7 @@ package extractor;
 import builder.Methode;
 import builder.Type;
 
-public class ExcratorClasse extends Extractor {
+public class ExtractorClasse extends Extractor {
 
 	public String nameClasse;
 
@@ -16,11 +16,9 @@ public class ExcratorClasse extends Extractor {
 		}
 
 		for (Methode m : c.methodes) {
-			this.arrNoeud(m.name);
-
+			this.addNoeud(m.name);
 			for (Methode called : m.appels) {
 				if (called.nameClasse.equals(nameClasse)) {
-
 					this.addArc(m.name, called.name);
 				}
 			}

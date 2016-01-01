@@ -1,29 +1,22 @@
 package builder;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Type {
 
-	public static ArrayList<Type> instances = new ArrayList<>();
+	public static HashSet<Type> instances = new HashSet<>();
 
-	public static void createInFotExists(String nameClasse) {
-		for (Type instance : instances) {
-			if (instance.name.equals(nameClasse)) {
-				return;
-			}
-		}
+	public static void addType(String nameClasse) {
 		Type t = new Type();
 		t.name = nameClasse;
 		instances.add(t);
-
-		System.out.println("++ Type " + nameClasse + " created.");
 	}
 
 	// Statique
 	public String name = "undefined";
 
 	//  Dynamique
-	public ArrayList<Methode> methodes = new ArrayList<Methode>();
+	public HashSet<Methode> methodes = new HashSet<Methode>();
 
 	public String toString() {
 		return name;

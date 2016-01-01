@@ -1,11 +1,13 @@
 package extractor;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class Extractor {
+@SuppressWarnings("unchecked")
+public abstract class Extractor {
 
 	protected class Arc {
 		String A;
@@ -33,17 +35,16 @@ public class Extractor {
 		arcs.add(arc);
 	}
 
-	public void arrNoeud(String n) {
+	public void addNoeud(String n) {
 		this.noeuds.add(n);
 		System.out.println("Noeud " + n);
 	}
 
-	public ArrayList<String> noeuds = new ArrayList<>();
+	public HashSet<String> noeuds = new HashSet<>();
 	public ArrayList<Arc> arcs = new ArrayList<>();
 
 	private JSONArray getNodesJson() {
 		JSONArray mJSONArray = new JSONArray();
-		int id = 0;
 		for (String c : noeuds) {
 			JSONObject jObjd = new JSONObject();
 			jObjd.put("id", c);
@@ -71,9 +72,7 @@ public class Extractor {
 		JSONObject jObjd = new JSONObject();
 		jObjd.put("nodes", getNodesJson());
 		jObjd.put("edges", getArcsJson());
-
 		return jObjd.toJSONString();
-
 	}
 
 }
