@@ -21,6 +21,7 @@ public class Parser {
 
 	public static final String jrePath = "/usr/lib/jvm/java-8-oracle/lib/dt.jar";
 
+    // Construit la hiérarchie nécessaise pour la navigation
 	public static void buildHierarchy(String projectPath) throws IOException {
 
 		final File folder = new File(projectPath);
@@ -62,15 +63,11 @@ public class Parser {
 
 				Methode m = new Methode();
 				m.name = method.getName().toString();
-				// m.typeRetour = method.getReturnType2().toString();
 				m.nameClasse = nameClasse;
 				Methode.instances.add(m);
 
-				// Main.Log("Méthode contruite : "+m);
-
 				Type.addType(nameClasse);
 			} catch (Exception e) {
-
 			}
 
 		}

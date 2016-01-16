@@ -5,10 +5,12 @@ import java.util.HashMap;
 import builder.Methode;
 import builder.Type;
 
+// Premet de contruire le graphe de dépendance pour le projet entier
 public class ExtractorProject extends Extractor {
-	
+
 	HashMap<String, Arc> map = new HashMap<>();
-	
+
+    // Incrémente de 1 le poids de l'arc entre m1 et m2
 	public void incrementArc(Methode m1, Methode m2) {
 		String key = m1.nameClasse+"-"+m2.nameClasse;
 		if (map.get(key) == null) {
@@ -20,15 +22,16 @@ public class ExtractorProject extends Extractor {
 			Arc a = map.get(key);
 			a.poids++;
 		}
-		
 	}
 
 	public void process() {
-		
+
+        // On crée un noeud pour chacune des classes
 		for (Type c : Type.instances) {
 			this.addNoeud(c.name);
 		}
-		
+
+        // On incrémente l'arc entre chaque méthode 
 		for (Methode m1 : Methode.instances) {
 			for (Methode m2 : m1.appels) {
 				if (!m1.nameClasse.equals(m2.nameClasse)) {
@@ -36,7 +39,7 @@ public class ExtractorProject extends Extractor {
 				}
 			}
 		}
-		
+
 		for (Arc c : map.values()) {
 			this.arcs.add(c);
 		}

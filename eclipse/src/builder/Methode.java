@@ -52,8 +52,6 @@ public class Methode {
 			if (classeContenante != null) {
 				m.classe = classeContenante;
 				classeContenante.methodes.add(m);
-				// Main.Log("La classe "+classeContenante+" contient
-				// la méthode "+m.name);
 			}
 		}
 	}

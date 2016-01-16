@@ -8,6 +8,7 @@ import org.json.simple.JSONObject;
 
 import main.Main;
 
+// Classe abstraite permettant de consruite un graphe et d'en former un JSON
 @SuppressWarnings("unchecked")
 public abstract class Extractor {
 

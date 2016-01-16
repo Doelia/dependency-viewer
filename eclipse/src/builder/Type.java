@@ -6,6 +6,7 @@ public class Type {
 
 	public static HashSet<Type> instances = new HashSet<>();
 
+    // Ajoute un nouveau type à la liste des instances
 	public static void addType(String nameClasse) {
 		Type t = new Type();
 		t.name = nameClasse;
@@ -22,6 +23,7 @@ public class Type {
 		return name;
 	}
 
+    // Retourne l'instance d'un type depuis son nom
 	public static Type getTypeFromName(String name) {
 		for (Type t : instances) {
 			if (t.name.equals(name)) {

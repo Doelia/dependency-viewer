@@ -9,7 +9,7 @@ import (
 )
 
 var port = flag.Int("port", 2000, "Modifie le port d'écoute (défaut 2000)")
-var jar = flag.String("jar", "/Users/doelia/Documents/dev/M2/M2-evolution/eclipse/ast-parser/graph-generator.jar", "Chemin du jar")
+var jar = flag.String("jar", "/Users/doelia/Documents/dev/M2/dependency-viewer/graph-generator.jar", "Chemin du jar")
 
 func startWebServer(port int) {
 	fmt.Printf("Serveur web en écoute sur le port %d.\n", port)
