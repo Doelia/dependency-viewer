@@ -2,16 +2,11 @@
 
 ## Description de l'outil
 
-Outil permenttant de générer des graphes à partir d'un code source java
-
-Méthode utilisée :
-- Analyse du code source java en utilisant l'arbre syntaxique abstrait (AST).
+Outil permettant de générer des graphes à partir d'un code source java. La génération est faite par une analyse du code source java en utilisant l'arbre syntaxique abstrait (AST) et la visualisation peut se faire dans un navigateur Internet.
 
 Génération de deux types de graphes :
 - Graphe d'appel au sein d'une classe
-⁻ Graphe d'appel de l'application
-
-La visualisation se fait dans un navigateur Internet.
+- Graphe d'appel de l'application
 
 
 ## Description technique
