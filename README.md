@@ -18,6 +18,16 @@ Le projet comporte 3 composants :
     - Bibliothèque utilisée pour la visualisation : https://github.com/almende/vis
 - Un serveur en Golang pour relier le .jar au client web
 
+### Documetation du code Java
+
+4 packages :
+- **Package externals/** Permet la génération de l'AST via le pattern Visitor ;
+- **Package builder/** Représente les entités Methode et Type (classe) nécessaires à la gérération d'un graphe. Il propose toutes les méthodes nécessaires au stockage des ces entités et au calcul des dépendances entre elles ;
+- **Package extractor/** Regroupe tous les outils nécessaires à la génération de graphes en fonction des objectifs voulus :
+    - Extractor.java est la classe abstraite proposant les méthodes pour la construction du graphe ainsi que la conversion au format JSON de ces grahes ;
+    - ExtractorClasse.java et ExtractorClasse.java sont la mise en pratique des cas voulus.
+- **Package main/** contient la méthode main qui a le role de lancer les executions et de gérer les parametres d'entrée du programme
+
 ## Utilisation
 
 Le .jar est à disposition dans le repertoire et n'a pas besoin d'être recompilé.
