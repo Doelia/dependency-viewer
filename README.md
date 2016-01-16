@@ -18,7 +18,7 @@ Le projet comporte 3 composants :
     - Bibliothèque utilisée pour la visualisation : https://github.com/almende/vis
 - Un serveur en Golang pour relier le .jar au client web
 
-### Documetation du code Java
+### Documentation du code Java
 
 4 packages :
 - **Package externals/** Permet la génération de l'AST via le pattern Visitor ;
