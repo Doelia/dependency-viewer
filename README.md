@@ -5,14 +5,14 @@
 ![](http://i.imgur.com/rI5r78O.png)
 
 Le projet comporte 3 composants :
-- Le code JAVA qui permet de générer un graphe au format json
+- Une application JAVA qui permet de générer un graphe au format json en utilisant un AST
     - Exporté en .jar pour une utilisation externe
 - Un client web qui permet de visualiser les graphes et de configurer des parametres
 - Un serveur en Golang pour relier le .jar au client web
 
 ## Utilisation
 
-Le .jar est à disposition dans le repertoire et n'a pa besoin d'être recompilé  
+Le .jar est à disposition dans le repertoire et n'a pas besoin d'être recompilé  
 
 Compiler le serveur golang :
 ```
