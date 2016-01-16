@@ -12,7 +12,7 @@ Le projet comporte 3 composants :
 
 ## Utilisation
 
-Le .jar est à disposition dans le repertoire et n'a pas besoin d'être recompilé  
+Le .jar est à disposition dans le repertoire et n'a pas besoin d'être recompilé.
 
 Compiler le serveur golang :
 ```
@@ -23,7 +23,8 @@ go build
 
 Lancer le serveur Golang en spécifiant le chemin absolue du JAR et le port HTTP voulu :
 ```
-./ast-linker -port 2000 -jar /Users/doelia/Documents/dev/M2/M2-evolution/eclipse/ast-parser/graph-generator.jar
+./ast-linker -port 2000 -jar \
+/Users/doelia/Documents/dev/M2/dependency-viewer/graph-generator.jar
 ```
 
 Ouvrir le client web dans un navigateur : http://localhost:2000
