@@ -56,13 +56,13 @@
                 <option value="projet">Graphe d'appel de l'application</option>
                 <option value="classe">Graphe d'appel au sein d'une classe</option>
             </select>
-            <div ng-show="methode == 'projet'" style="margin-top: 15px;">
+            <div ng-show="methode == 'classe'" style="margin-top: 15px;">
                 <ul>
                     <li>Chaque méthode est un nœud</li>
                     <li>Un appel entre les méthodes M1 et M2 : M1 M2 est un arc dirigé de M1 vers M2</li>
                 </ul>
             </div>
-            <div ng-show="methode == 'classe'" style="margin-top: 15px;">
+            <div ng-show="methode == 'projet'" style="margin-top: 15px;">
                 <ul>
                     <li>Un nœud est une classe</li>
                     <li>Un arc de la classe C1  vers la classe C2 = au moins une méthode de C1 appelle une méthode de C2</li>
